@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Suna Kya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <!-- svg ko alag file bna kr run kr rhe hai isliye yeh link likhna padega ->
+    xmlns="http://www.w3.org/2000/svg" -->
+    <script src="script.js"></script>
+    <div class="container flex">
+        <div class="left">
+            <div class="start bg-grey round-box flex col left-gap">
+                <div class="logo invert ">
+                    <img class="spotifylogo" src="logo.svg" alt="Spotify">
+                    <img class="cross" width="35px" src="cross.svg" alt="">
+                </div>
+                <div class="home invert">
+                    <ul class="flex col left-gap ">
+                        <li class="flex left-text-gap"><img src="home.svg" alt="home">Home</li>
+                        <li class="flex opacity left-text-gap"><img src="search.svg" alt="search">Search</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="library bg-grey round-box">
+                <div class="lib-head flex ">
+                    <div class="flex left-text-gap ">
+                        <a href="" class="flex left-text-gap" id="lib-click">
+                            <div class="invert opacity"><img src="library.svg" alt="img"></div>
+                            <div class="lib-text invert color-text" id="text001">Your Library</div>
+                        </a>
+                    </div>
+                    <div class="invert flex opacity" id="lib-icon"><svg data-encore-id="icon" height="22px" role="img"
+                            aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z">
+                            </path>
+                        </svg></div>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer flex left-gap ">
+                    <div><a href="https://www.spotify.com/jp/legal"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="nav flex align-items">
+                    <div class="arrows invert flex left-gap opacity">
+                        <img height="40px" class="hamburger" src="hamburger.svg" alt="">
+                        <div class="arrow-left">
+                            <svg data-encore-id="icon" role="img" height="16px" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="arrow-right">
+                            <svg data-encore-id="icon" role="img" height="16px" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="buttons left-gap">
+                        <button class="signup ">Sign up</button>
+                        <button class="login">Log in</button>
+                    </div>
+                </div>
+            </div>
+            <div class="spotifyPlaylist bg-grey ">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer flex">
+                    <div data-folder="main" class="cards white-text">
+                        <div class="playbutton">
+                            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green Circle -->
+                                <circle cx="100" cy="100" r="80" fill="green" />
+                                <!-- Black Play Button -->
+                                <polygon points="70,60 70,140 130,100" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="playlistimg" src="cards01.jpg" alt="">
+                        <h2>Ankit Athletic</h2>
+                        <p>Hits to fill your mood and give you happiness</p>
+                    </div>
+                    <div data-folder="emotional" class="cards white-text">
+                        <div class="playbutton">
+                            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green Circle -->
+                                <circle cx="100" cy="100" r="80" fill="green" />
+                                <!-- Black Play Button -->
+                                <polygon points="70,60 70,140 130,100" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="playlistimg" src="cards02.jpg" alt="">
+                        <h2>Emotional</h2>
+                        <p>calm composure, soothing music that fits your vibe</p>
+                    </div>
+                    <div data-folder="energetic" class="cards white-text">
+                        <div class="playbutton">
+                            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green Circle -->
+                                <circle cx="100" cy="100" r="80" fill="green" />
+                                <!-- Black Play Button -->
+                                <polygon points="70,60 70,140 130,100" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="playlistimg" src="cards03.jpg" alt="">
+                        <h2>Energetic</h2>
+                        <p>Listen the cultural feel & embedding remix culture</p>
+                    </div>
+                    <div data-folder="oldsongs" class="cards white-text">
+                        <div class="playbutton">
+                            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green Circle -->
+                                <circle cx="100" cy="100" r="80" fill="green" />
+                                <!-- Black Play Button -->
+                                <polygon points="70,60 70,140 130,100" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="playlistimg" src="cards04.jpg" alt="">
+                        <h2>Old Hits</h2>
+                        <p>Seat back and relax listening this chill music playlist</p>
+                    </div>
+                    <div data-folder="bhajan" class="cards white-text">
+                        <img class="playlistimg" src="cards05.jpg" alt="">
+                        <div class="playbutton">
+                            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green Circle -->
+                                <circle cx="100" cy="100" r="80" fill="green" />
+                                <!-- Black Play Button -->
+                                <polygon points="70,60 70,140 130,100" fill="black" />
+                            </svg>
+                        </div>
+                        <h2>Bhajan</h2>
+                        <p>Time to get tied up and listen the rocky hits of all eras</p>
+                    </div>
+                    <div class="cards white-text">
+                        <img class="playlistimg" src="cards06.jpg" alt="">
+                        <div class="playbutton">
+                            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Green Circle -->
+                                <circle cx="100" cy="100" r="80" fill="green" />
+                                <!-- Black Play Button -->
+                                <polygon points="70,60 70,140 130,100" fill="black" />
+                            </svg>
+                        </div>
+                        <h2>Brown Noise</h2>
+                        <p>Soothing , low frequencies songs</p>
+                    </div>
+                </div>
+                <div class="playbar flex ">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="controller flex justify-center">
+
+                        <div id="previous">
+                            <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M7 6a1 1 0 0 1 2 0v4l6.4-4.8A1 1 0 0 1 17 6v12a1 1 0 0 1-1.6.8L9 14v4a1 1 0 1 1-2 0V6Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div id="play" class="play-pause">
+                            <img src="play.svg" alt="">
+                        </div>
+                        <div id="next">
+                            <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M17 6a1 1 0 1 0-2 0v4L8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8L15 14v4a1 1 0 1 0 2 0V6Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="voltime flex justify-center align-items">
+                     <div class="songtime">
+                        
+                     </div>
+                     <div class="volume">
+                        <h2>Volume</h2>
+                        <input type="range" name="volume">
+                     </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
